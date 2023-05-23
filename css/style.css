@@ -1,0 +1,398 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body
+{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body ::selection
+{
+  background-color: black;
+  color: white;
+}
+
+
+/* This is the navbar and header css */
+.nav-photo-1
+{
+  background-image: url(../imgs/bg-image-29.jpg);
+  background-size: cover;
+}
+.btn1
+{
+  background-color: #00c3da;
+}
+.btn
+{
+  width:7rem ;
+  height:3rem;
+}
+.cursol-content h1
+{
+   font-weight: 900;
+   font-size: 100px;
+}
+.cursol-content p
+{
+   font-weight: 400;
+    font-size: 18px;
+}
+.nav-photo-2
+{
+  background-image: url(../imgs/bg-image-28.jpg);
+  background-size: cover;
+}
+
+
+
+
+
+/* This is about section css */
+.typing-effect::after
+{
+  content: "/";
+  color: #00c3da;
+  animation-name: typing ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes typing
+{
+   0% {content: "|";}
+   3% {content: "|a";}
+   6% {content: "|ap";}
+   9% {content: "|app";}
+   12% {content: "|apps";}
+   15% {content: "|app";} 
+   18% {content: "|ap";}
+   21% {content: "|a";}
+   24% {content: "|";}
+   27% {content: "|s";}
+   30% {content: "|so";}
+   33% {content: "|sof";}
+   36% {content: "|soft";}
+   39% {content: "|softw";}
+   42% {content: "|softwe";}
+   45% {content: "|softwer";}
+   48% {content: "|softwere";}
+   51% {content: "|softwer";}
+   54% {content: "|softwe";}
+   57% {content: "|softw";}
+   60% {content: "|soft";}
+   63% {content: "|sof";}
+   67% {content: "|so";}
+   70% {content: "|s";}
+   73% {content: "|";}
+   76% {content: "|w";}
+   79% {content: "|we";}
+   82% {content: "|web";}
+   85% {content: "|webs";}
+   88% {content: "|websi";}
+   91% {content: "|websit";}
+   94% {content: "|website";}
+   100% {content: "|websites";}
+
+}
+
+.about-btn
+{
+  color: black;
+  border-radius: 0;
+  background-color: white;
+  border-color: black ;
+}
+.about-btn:hover
+{
+   background-color: black;
+   color: white;
+   border-color: aliceblue;
+}
+.about-content p
+{
+  color: rgb(120, 120, 120);
+  font-weight: 200;
+}
+
+
+
+/* This is team section css */
+.team-section-header h2::after
+{
+  content: "c";
+  position: absolute;
+  z-index: -1;
+  font-size: 2em;
+  top: -0.5em;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.06;
+}
+.team-section-header h2{
+  position: relative;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.team-section-header p{
+   color: rgb(120, 120, 120);
+}
+
+.team-content-layer
+{
+  position: absolute;
+  top: 0.8rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 195, 218, 0.9);
+  opacity: 0;
+  transition: top 0.4s, opacity 0.4s;
+}
+.team-content:hover .team-content-layer
+{
+   top: 0;
+   opacity: 1;
+}
+.content
+{
+ position: relative;
+ top: 70%;
+ left: 1rem;
+ width: 70%;
+ 
+}
+.content > h4
+{
+  font-size: 0.9rem;
+}
+.content >p{
+  font-size: 0.7rem;
+}
+
+.team-content-layer .icons
+{
+ position: relative;
+ top: 1rem;
+ left: 1rem;
+ width: 70%;
+
+ 
+}
+
+.icon
+{
+  width: 1.5rem;
+  height: 2rem;
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+
+}
+.icon a
+{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+/* This is team section css */
+.bg-brown
+{
+  background-color: #787878;
+}
+.services-header h2::before
+{
+  content: "w";
+  top: -0.5em;
+  left: -0.15em;
+  position: absolute;
+  text-transform: capitalize;
+  color:darkgray ;
+  font-size: 2em;
+  z-index: -1;
+  opacity: 0.7;
+
+  
+}
+.services-header h2 
+{
+  position: relative;
+  font-weight: 800;
+  font-size: 2rem;
+  z-index: 1;
+}
+.main-services h4
+{
+  text-transform: uppercase;
+  font-size: 0.9rem ;
+  
+}
+@media  (min-width: 576px) and (max-width: 1199.98px) { 
+  .services-header{
+    text-align:center;
+  }
+  .services-header h2::before
+{
+  content: "w";
+  position: absolute;
+  z-index: -1;
+  font-size: 2em;
+  top: -0.5em;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.7;
+  color: darkgray;
+}
+
+  }
+
+
+  /* This is prices section css */
+  .prices-sec-header h2::after
+  {
+    content: "c";
+    position: absolute;
+    top:-0.5em;
+    left: 0;
+    right:0;
+    color:rgb(120, 120, 120);
+    opacity:0.07;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    z-index: 3;
+  }
+  .prices-sec-header h2
+  {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  #prices
+   {
+      background-color: #f7f7f7;
+   }
+  .prices-cart h4
+  {
+      font-size: 0.9rem;
+  }
+  .prices-cart h3
+    {
+      font-size: 3.3rem;
+      position: relative;
+      font-weight: 700;
+    }
+
+  .prices-cart h3::before
+  {
+    content: "$";
+    font-size: 1.2rem;
+    position: absolute;
+    top:-0.5em ;
+    left: -0.4em;
+    font-weight: 200;
+  }
+  .prices-cart li
+   {
+    color:#787878;
+   }
+   .prices-cart .btn
+   {
+      width: 5rem;
+      height: 2.5rem;
+      font-size: 0.9rem;
+   }
+   
+   .value span
+   {
+    padding: 0.8em;
+    font-size: 0.7rem;
+    background-color: #00c3da;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    border-color: #00c3da;
+   }
+   .unique-card h3
+   {
+    color: #00c3da;
+   }
+
+
+
+
+
+/* This is testimonian section css */
+   #testimonian
+   {
+    background-color: #f7f7f7;
+   }
+
+   .carsoul-img 
+   {
+    position: relative;
+    top: -8rem;
+   }
+   .carousel-item-inner
+   {
+    padding: 5rem 6rem;
+   }
+   .carsoul-content
+   {
+    margin-top: -5rem;
+   }
+   .carsoul-content h4
+   {
+     font-size: 1.7rem;
+     font-weight: 500;
+     margin-bottom: 1rem;
+   }
+   .carsoul-content p ,span
+   {
+     color:#787878;
+     font-size: 0.8rem;
+   }
+
+   
+  .foter-content label , h3 
+  {
+    color: #787878;
+  }
+  #emailHelp
+  {
+    color: #787878;
+  }
+
+  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #787878;
+    opacity: 0.8; /* Firefox */
+}
+
+.footetBtn
+{
+  background-color: #00c3da;
+  border: #00c3da;
+  border-radius: 30px;
+}
+.footetBtn:hover
+{
+  background-color: #787878;
+  border: #787878;
+}
+#testimonian .carousel-control-prev-icon,#testimonian .carousel-control-next-icon {
+  background-color:#00c3da !important;
+  border-radius: 10px;
+  
+ }
+ 
